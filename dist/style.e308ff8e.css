@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'GloriaHallelujah-Regular';
+    src: url('C:/Magisterka/informatyka/Projekt_test/fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url('C:/Magisterka/informatyka/Projekt_test/fonts/Press_Start_2P/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
+body 
+
+
+{
+
+    font-family: 'GloriaHallelujah-Regular', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    
+}
+
+
+h1 {
+    
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#tytul p {
+font-family: 'PressStart2P-Regular', Arial, sans-serif;
+color: tomato;
+
+}
+
+
+#answers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.answer {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#difficulty {
+    margin-top: 20px;
+}
+
+#difficulty p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#difficultyLevels {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.difficultyLevel {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#score {
+    margin-top: 20px;
+}
+
+#score p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#scoreValue {
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
