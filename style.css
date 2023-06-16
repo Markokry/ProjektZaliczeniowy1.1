@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GloriaHallelujah-Regular';
-    src: url('C:/Magisterka/informatyka/Projekt_test/fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf') format('truetype');
+    src: url('fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'PressStart2P-Regular';
-    src: url('C:/Magisterka/informatyka/Projekt_test/fonts/Press_Start_2P/PressStart2P-Regular.ttf') format('truetype');
+    src: url('fonts/Press_Start_2P/PressStart2P-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     
@@ -23,12 +23,12 @@ body {
     background-color: #f0f0f0;
     color: orangered;
 
-    /* Dodane style do utworzenia efektu szachownicy */
+    /* szachownica */
     background-image: 
-        linear-gradient(45deg, black 25%, transparent 25%), 
-        linear-gradient(-45deg, black 25%, transparent 25%), 
-        linear-gradient(45deg, transparent 75%, black 75%), 
-        linear-gradient(-45deg, transparent 75%, black 75%);
+        linear-gradient(45deg, rgb(173, 159, 159) 25%, transparent 25%), 
+        linear-gradient(-45deg, rgb(233, 195, 195) 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, rgb(194, 168, 168) 75%), 
+        linear-gradient(-45deg, transparent 75%, rgb(218, 155, 155) 75%);
     background-size: 100px 100px; /* Rozmiar kratki */
     background-position: 0 0, 0 50px, 50px -50px, -50px 0px;
 }
@@ -45,8 +45,19 @@ h1 {
 font-family: 'PressStart2P-Regular', Arial, sans-serif;
 color: tomato;
 font-size: 40px;
+animation: pulsate 2s linear infinite;
 }
-
+@keyframes pulsate {
+    0% {
+    color: tomato;
+    }
+    50% {
+    color: lime;
+    }
+    100% {
+    color: dodgerblue;
+    }
+}
 
 #answers {
     display: flex;
