@@ -1,4 +1,4 @@
-//@font-face {
+@font-face {
     font-family: 'GloriaHallelujah-Regular';
     src: url('fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -20,43 +20,22 @@ body {
     text-align: center;
     font-size: 40px;
     padding: 20px;
-    background-color: #f0f0f0;
-    color: orangered;
+    background-color: #000000; /* zmienione na czarny */
+    color: #2b2929; /* zmienione na biały */
 
-    /* szachownica */
-    background-image: 
-        linear-gradient(45deg, rgb(173, 159, 159) 25%, transparent 25%), 
-        linear-gradient(-45deg, rgb(233, 195, 195) 25%, transparent 25%), 
-        linear-gradient(45deg, transparent 75%, rgb(194, 168, 168) 75%), 
-        linear-gradient(-45deg, transparent 75%, rgb(218, 155, 155) 75%);
-    background-size: 100px 100px; /* Rozmiar kratki */
-    background-position: 0 0, 0 50px, 50px -50px, -50px 0px;
 }
 
 
-
 h1 {
-    
     font-size: 60px;
     margin-bottom: 20px;
+    color: #ffffff; /* zmienione na biały */
 }
 
 #tytul p {
 font-family: 'PressStart2P-Regular', Arial, sans-serif;
-color: tomato;
+color: #ffffff; /* zmienione na biały */
 font-size: 40px;
-animation: pulsate 2s linear infinite;
-}
-@keyframes pulsate {
-    0% {
-    color: tomato;
-    }
-    50% {
-    color: lime;
-    }
-    100% {
-    color: dodgerblue;
-    }
 }
 
 #answers {
@@ -81,6 +60,7 @@ animation: pulsate 2s linear infinite;
 #difficulty p {
     font-weight: bold;
     margin-bottom: 10px;
+    color: #ffffff; /* zmienione na biały */
 }
 
 #difficultyLevels {
@@ -93,6 +73,7 @@ animation: pulsate 2s linear infinite;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+    color: #ffffff; /* zmienione na biały */
 }
 
 #score {
@@ -102,17 +83,19 @@ animation: pulsate 2s linear infinite;
 #score p {
     font-weight: bold;
     margin-bottom: 10px;
+    color: #ffffff; /* zmienione na biały */
 }
 
 #scoreValue {
     font-size: 24px;
+    color: #ffffff; /* zmienione na biały */
 }
 
 button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #009688;
-    color: #fff;
+    background-color: #ffffff; /* zmienione na biały */
+    color: #000000; /* zmienione na czarny */
     border: none;
     border-radius: 4px;
     cursor: pointer;
