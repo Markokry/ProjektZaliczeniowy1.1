@@ -1,3 +1,4 @@
+
 const API_URL = 'https://www.colr.org/json/colors/random/';
 
 let currentColorHex = '';
@@ -19,7 +20,7 @@ const resetGame = () => {
     currentColorHex = '';
     currentDifficulty = 2;
     score = 0;
-    document.body.style.backgroundColor = 'white';
+    document.body.style.backgroundColor = 'black';
     document.getElementById('colorHex').textContent = '';
     document.getElementById('answers').innerHTML = '';
     document.getElementById('scoreValue').textContent = '0';
@@ -29,7 +30,9 @@ const resetGame = () => {
 
 document.getElementById('startButton').addEventListener('click', resetGame);
 
+
 const startNewGame = () => {
+    document.body.style.backgroundColor = 'black'; 
     fetchColors()
         .then(colors => {
             currentColorHex = colors[Math.floor(Math.random() * colors.length)];
